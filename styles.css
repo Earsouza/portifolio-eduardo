@@ -123,13 +123,13 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/*.menu-toggle div {
+.menu-toggle div {
     width: 25px;
     height: 3px;
     background-color: var(--text-primary);
     margin: 4px 0;
     transition: 0.4s;
-}*/
+}
 
 /* Menu Toggle Animation */
 .menu-toggle div {
