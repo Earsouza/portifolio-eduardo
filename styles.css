@@ -34,6 +34,29 @@ header {
     z-index: 1000;
 }
 
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(270deg, #00ffff, #ffff00, #00ffff);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s ease infinite;
+    white-space: nowrap;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Logo and Icon Styles */
 .logo-container {
     display: flex;
@@ -181,6 +204,36 @@ section {
 #home {
     justify-content: center;
     text-align: center;
+}
+
+.sobre-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 250px;
+    width: 86%;
+    height: auto;
+    border-radius: 10%; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.profile-image:hover {
+    transform: scale(1.05); /* Efeito de zoom suave no hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-texto {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #home h1 {

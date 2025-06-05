@@ -27,7 +27,7 @@ const text = "Criação de Landing Pages e Soluções Digitais";
                 index++;
                 setTimeout(typeText, 100);
             } else {
-                typingElement.style.borderRight = "none"; // Remove o cursor ao final
+                typingElement.style.borderRight = "none"; 
             }
         }
 
@@ -39,8 +39,6 @@ document.querySelector('.contato-form').addEventListener('submit', function(e) {
     alert('Mensagem enviada com sucesso!');
     this.reset();
 });
-
-// Existing smooth scroll and mobile menu toggle code remains the same
 
 // Add a subtle tech-inspired interaction for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
@@ -55,13 +53,13 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Optional: Add a console-like effect to logo
+/*Optional: Add a console-like effect to logo
 const logoIcon = document.querySelector('.logo-icon');
-const consoleEffects = ['🖥️', '💻', '⌨️', '🔧'];
+const consoleEffects = ['🖥️', '😁', '🛹', '🎮'];
 let effectIndex = 0;
 
 logoIcon.addEventListener('click', function() {
     this.textContent = consoleEffects[effectIndex];
     effectIndex = (effectIndex + 1) % consoleEffects.length;
-});
+});*/
 
